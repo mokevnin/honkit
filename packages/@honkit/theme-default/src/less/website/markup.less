@@ -5,4 +5,14 @@
         cursor: help;
         text-decoration: underline;
     }
+
+    // gitbook-markdown-css sets tables to display:table, where overflow has no
+    // effect, so a wide table overflows the page on narrow screens.
+    // As a block, it scrolls horizontally instead.
+    table {
+        display: block;
+        width: max-content;
+        max-width: 100%;
+        overflow-x: auto;
+    }
 }
